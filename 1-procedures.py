@@ -47,10 +47,22 @@ def main():
     print("total_points type:", type(total_points))
     print("games_played type:" , type(games_played))
     print("is_playing_game type:" , type(is_playing_game))
+
     # len()
+    store_name="Ulta"
+    print(len(store_name))
+
+    if len(store_name) < 10:
+        print("Hey, you need a longer store name.")
+    else: 
+        print("Store name looks good.")
+
+    favorite_players=("Larry Bird", "Kobe Bryant", "Michael Jordan") 
+    print("favorite_players:", len(favorite_players)) 
+
 
     # input()
-
+    
     # range()
 
     # int() 
