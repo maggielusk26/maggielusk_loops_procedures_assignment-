@@ -29,7 +29,7 @@
 #
 
 def average_score(total_points, games played):  
-     average_score=total_points / games_played
+     average_score=total_points / game_played 
      return average_score 
  
 
