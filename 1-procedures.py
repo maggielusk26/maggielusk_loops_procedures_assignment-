@@ -28,6 +28,12 @@
 #   Call - my_method() - when you want to use the function
 #
 
+def average_score(total_points, games played):  
+     average_score=total_points / games_played
+     return average_score 
+ 
+
+
 def main():
     pass 
 
@@ -39,7 +45,7 @@ def main():
 
     # type()
     member_name="Kai"
-    total_points=220
+    total_points=123
     games_played=5
     is_playing_game=True
 
