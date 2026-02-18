@@ -31,7 +31,11 @@
 def main():
     pass 
 
-    # print() 
+    # print()
+    print("Hello!") 
+
+    name="Bob"
+    print("Hello!;", name)
 
     # type()
 
