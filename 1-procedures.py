@@ -62,7 +62,16 @@ def main():
 
 
     # input()
-    
+    age=input("How old are you?")
+    print("You entered:", age)
+    if int(age) <= 19 and int(age) >= 13:
+            print("You ARE a teenager")
+    else: 
+         print("You are not a teenager")
+
+    your_name=input("Enter your name:")
+    print("Hello!:", your_name)
+
     # range()
 
     # int() 
