@@ -37,6 +37,28 @@
 # Example to use in your main(): print(say_hi("Bob"))
 # Commit and Push your work! 
 
+# TASK 2: Create a new function to indicate if you can check out books
+# Use the def keyword to declare your function and give it a name of checkout_books
+# Add a parameter named has_account
+# Add a parameter named number_of_books
+# Add a conditional statement inside the function
+# The conditional statement should have an if, elif, else
+# if not has_account then you should print "You need an account to check out books"
+# else if (elif) number_of_books > 5 print "You can only check out 5 books"
+# else print "You can check out more books"
+# Somewhere in the main() function call the new checkout_books() function
+# You don't have to print the result of this function because it already handles print for you
+# Commit and Push your work! 
+
+def checkout_books(has_account, number_of_books):
+    if not has_account :
+     print ("You need an account to check out books")
+    elif number_of_books > 5:
+        print ("You can only check out 5 books.")
+    else: 
+        print ("You can check out more books. ")
+
+
 def say_hi(name): 
      greeting = "What's up? " + name 
      return greeting 
@@ -104,6 +126,10 @@ def main():
 
     # list() 
     print (say_hi(your_name))
+
+    has_account= True  
+    number_of_books = 3
+    checkout_books(has_account, number_of_books)
 
 if __name__ == "__main__":
     main()
