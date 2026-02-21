@@ -28,8 +28,22 @@
 #   Call - my_method() - when you want to use the function
 #
 
-def average_score(total_points, games played):  
-     average_score=total_points / game_played 
+# TASK 1: Create a new function to give a greeting (aka procedure) 
+# Use the def keyword to declare your function and give it a name of say_hi 
+# Add a parameter named name for the function
+# Declare a variable named greeting and set the value to be your greeting, for example print("Hello there:", name)
+# Return the variable greeting 
+# Somewhere in the main() function call the new say_hi function you have created and print the result
+# Example to use in your main(): print(say_hi("Bob"))
+# Commit and Push your work! 
+
+def say_hi(name): 
+     greeting = "What's up? " + name 
+     return greeting 
+
+
+def average_score(total_points, games_played):  
+     average_score=total_points / games_played 
      return average_score 
  
 
@@ -76,7 +90,7 @@ def main():
          print("You are not a teenager")
 
     your_name=input("Enter your name:")
-    print("Hello!:", your_name)
+    #print("Hello!:", your_name)
 
     # range()
 
@@ -89,7 +103,7 @@ def main():
     # bool()
 
     # list() 
-
+    print (say_hi(your_name))
 
 if __name__ == "__main__":
     main()
