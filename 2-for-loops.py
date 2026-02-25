@@ -24,9 +24,24 @@ def main():
     # FOR LOOP (range)
     bounce_ball(1000)
 
-
     # FOR iterate
     # bounce_actions = []
+
+    bucket = [
+        "Catfish"
+        "Trout", 
+        "Bass",
+        "Carp", 
+        "Goldfish", 
+        "Shark",
+        "Swordfish"
+
+    ]
+
+    for fish in bucket:
+        print ("Fish:",fish)
+
+
 
 
 if __name__ == "__main__":
