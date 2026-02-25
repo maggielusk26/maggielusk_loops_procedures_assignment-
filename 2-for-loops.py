@@ -1,3 +1,8 @@
+def bounce_ball(number_of_bounces):
+    for i in range(number_of_bounces): 
+        print ("move up")
+        print ("fall down")
+
 def main():
     """
     Loop Statements allow you to easily repeat a chunk of code many times.
@@ -17,6 +22,8 @@ def main():
     # now repeat this 1000 times 
 
     # FOR LOOP (range)
+    bounce_ball(1000)
+
 
     # FOR iterate
     # bounce_actions = []
