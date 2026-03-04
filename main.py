@@ -60,7 +60,7 @@ def main():
 
     # variables used in prior assignment
     member_name = "John Smith"
-    books_checked_out = 3
+    #books_checked_out = 3
     account_is_active = True
 
     # ------------------------------------------------------------
@@ -71,6 +71,9 @@ def main():
     # create a List variable to store the books
     # HINT: []
 
+    books_checked_out= ["The Hunger Games", "Powerless", "Red Queen", "The Maze Runner"]
+
+
     # ------------------------------------------------------------
     # STEP 2:
     #   Use a for loop to print out each of the books from the variable in step 1
@@ -78,6 +81,9 @@ def main():
 
     # create a for loop and print out each book
     # for item in list
+
+    for book in books_checked_out:
+        print(book)  
 
     # ------------------------------------------------------------
     # STEP 3:
@@ -87,9 +93,27 @@ def main():
     # ------------------------------------------------------------
 
     # store the books that are checked out (number)
+    len_of_name= len(member_name) 
+    print("Length of Name:", len_of_name)
 
+    number_of_books = len(books_checked_out)
+    print("Number of Books:", number_of_books)
+
+    range_of_books = range(number_of_books)
+    print("Range:", range_of_books)
     # iterate the books using range
     # for i in range
+    for i in range(number_of_books):
+      print(f"Index:{i}, Book: {books_checked_out[i]}, cool book")
+    if i == 1:
+         print("That book is the best")
+
+    if book == "Powerless":
+        print("That book is the best")
+
+    for i in range_of_books:
+        pass 
+
 
     # after adding the loops, comment out or remove these print statements
     print("Member Name:", member_name)
@@ -106,25 +130,52 @@ def main():
     # ------------------------------------------------------------
 
     # call your function here
+    def check_library_rules(account_is_active: bool, books_checked_out: int):
+        if not account_is_active :
+          return ("You need an account to check out books")
+        elif books_checked_out == 5:
+          return ("You can only check out 5 books.")
+        else: 
+          return ("You can check out more books. ")
+    
+    message= check_library_rules(account_is_active, number_of_books)
+    print("Rules:", message)
+
+
+
+
+
 
     # conditional statement to check the library rules - remove this code
     # after you have added a function to replace it
-    if not account_is_active:
-        print("You must have an active account in order to check out any books.")
-    elif books_checked_out >= 5:
-        print("You cannot check out anymore books, 5 is the limit.")
-    else:
-        print("You can check out more books.")
+    #if not account_is_active:
+    #print("You must have an active account in order to check out any books.")
+    #elif books_checked_out >= 5:
+    #print("You cannot check out anymore books, 5 is the limit.")
+    #else:
+     #   print("You can check out more books.")
 
     # ------------------------------------------------------------
     # STEP 5:
-    #   Use a WHILE loop to with the input function to ask the user
+    #   Use a WHILE loop with the input function to ask the user
     #   if they are ready to check out and print the message
     #   HINT: us the input() function to ask the user and then
     #   check if they entered a value such as y
     # ------------------------------------------------------------
 
     # add WHILE LOOP here
+
+    ready_to_checkout=False
+    
+    while not ready_to_checkout:
+       user_input= input("Are you ready to checkout? Enter a y if so:")
+       if user_input == "y":
+          ready_to_checkout=True  #exit from while loop
+       else: 
+          print("Ok, let us know when you are ready")
+
+    print("Have a great day!")
+    
 
     print("=" * 75)
 
